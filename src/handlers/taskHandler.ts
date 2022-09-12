@@ -55,7 +55,7 @@ const handleNameUpdate = async (req: Request, res: Response): Promise<void> => {
 
   TaskRepository.updateTaskName(id, text);
 
-  res.sendStatus(200);
+  res.status(200).json({ updatedName: text });
 }
 
 const handleDeleteTask = async (req: Request, res: Response): Promise<void> => {
