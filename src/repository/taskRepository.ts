@@ -2,14 +2,18 @@ import { Task } from "../model/task";
 
 let db: Task[] = [];
 
+const getTasks = () => {
+  return db;
+}
+
 const createTask = (task: Task) => {
   db.push(task);
 }
 
-const updateTaskName = (id: string, task: Task) => {
+const updateTaskName = (id: string, text: string) => {
   db.map(dbTask => {
     if (dbTask.id === id) {
-      dbTask.text = task.text;
+      dbTask.text = text;
     }
   })
 }
@@ -27,6 +31,7 @@ const deleteTask = (id: string) => {
 }
 
 export {
+  getTasks,
   createTask,
   updateTaskName,
   toogleTaskStatus,

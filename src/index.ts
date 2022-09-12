@@ -12,13 +12,15 @@ app.get("/", async (_, res: Response): Promise<void> => {
   res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
-app.post("/task", Handler.handleCreateTask);
+app.get("/tasks", Handler.handleGetTasks);
 
-app.put("/task/:id", Handler.handleNameUpdate)
+app.post("/tasks", Handler.handleCreateTask);
 
-app.delete("task/:id", Handler.handleDeleteTask)
+app.put("/tasks/:id", Handler.handleNameUpdate)
 
-app.put("/task/:id/toogle", Handler.handleToogleTask)
+app.delete("/tasks/:id", Handler.handleDeleteTask)
+
+app.put("/tasks/:id/toogle", Handler.handleToogleTask)
 
 try {
   app.listen(port, (): void => {
