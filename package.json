@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev ./src/index.ts",
     "tailwind": "npx tailwindcss -i ./public/app.css -o ./public/dist/output.css --watch",
     "dev": "concurrently \"ts-node-dev ./src/index.ts\" \"npx tailwindcss -i ./public/app.css -o ./public/dist/output.css --watch\""
   },
