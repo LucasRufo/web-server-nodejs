@@ -1,8 +1,8 @@
 # Web Server NodeJS
 
-Esse projeto é referente a matéria de Tecnologia Web e consiste de uma aplicação Web de todo-list simples utilizando NodeJS.
+Esse projeto é referente a matéria de Tecnologia Web do 8º semestre de Ciência da Computação da UNASP e consiste de uma aplicação Web de todo-list simples utilizando NodeJS.
 
-Fiz o projeto sozinho mesmo.
+Resolvi fazer o projeto sozinho mesmo.
 
 <p align="center">
   <img src="./images/todo-list.png" />
